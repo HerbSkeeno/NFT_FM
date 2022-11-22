@@ -1,0 +1,22 @@
+* {margin: 0; padding: 0;}
+
+.bg {
+	display: flex;
+	background-color: hsl(217, 54%, 11%);
+	width: auto;
+	height: 100vh;
+	align-items: center;
+    flex-direction: column;
+    justify-content: center;
+	box-sizing: border-box;
+}
+
+ .ad_container{
+ 	flex: 1;
+ 	margin: auto;
+ 	margin-top: 4rem;
+ 	margin-bottom: 1.5rem;
+	background-color: hsl(216, 50%, 16%);
+	width: 20rem;
+	height: 100vh;
+	border-radius: 15px;
