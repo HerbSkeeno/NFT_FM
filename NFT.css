@@ -14,10 +14,6 @@ h1 {
 	margin-bottom: .8rem;
 }
 
-h1:hover {
-	color: hsl(178, 100%, 50%);
-}
-
 hr {
 	position: relative;
 	border: 1px solid hsl(215, 32%, 27%);
@@ -58,8 +54,14 @@ hr {
 	border-radius: 10px;
 }
 
-.ad_container img:hover {
-	opacity: .1;
+.overlay{
+	position: absolute;
+	top: 1.5rem;
+	background-color: hsl(178, 100%, 50%);
+	width: 18rem;
+	height: 18rem;
+	border-radius: 10px;
+	opacity: 0;
 }
 
  .ad_container article{
@@ -114,8 +116,22 @@ hr {
 	color: white;
 }
 
+h1:hover {
+	color: hsl(178, 100%, 50%);
+    transition: 600ms;
+    cursor: pointer;	
+}
+
 .creator_name:hover{
 	color: hsl(178, 100%, 50%);
+    transition: 600ms;
+    cursor: pointer;
+}
+
+.overlay:hover{
+	opacity: 0.6;
+    transition: 600ms;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 376px) {
